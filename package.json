@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-to-awsbeanstalk",
+  "version": "1.0.0",
+  "description": "NodeJs app to deploy to AWS beanstalk",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfcb853/nodejs-to-awsbeanstalk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfcb853/nodejs-to-awsbeanstalk/issues"
+  },
+  "homepage": "https://github.com/jfcb853/nodejs-to-awsbeanstalk#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

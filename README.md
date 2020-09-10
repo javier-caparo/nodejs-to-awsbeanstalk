@@ -1,12 +1,14 @@
 # nodejs-to-awsbeanstalk
  NodeJs app to deploy to AWS beanstalk
 
-# CircleCI Integration:
+### CircleCI Integration:
 [![CircleCI](https://circleci.com/gh/jfcb853/nodejs-to-awsbeanstalk.svg?style=svg)](https://app.circleci.com/pipelines/github/jfcb853/nodejs-to-awsbeanstalk)
 
 ## Pipeline
 
-Github --> AWS CodePipeline --> AWS Elastic BeanStalk 
+NodeJS app --> Github --> AWS CodePipeline --> AWS Elastic BeanStalk 
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jfcb853/nodejs-to-awsbeanstalk/blob/master/LICENSE)
 
 ## App details
  NodeJs app running on port 5000

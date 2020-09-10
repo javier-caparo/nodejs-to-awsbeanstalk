@@ -3,7 +3,7 @@ const app = express();
 const router = express.Router();
 
 const path = __dirname + '/views/';
-const port = 5000;
+
 
 router.use(function (req,res,next) {
   console.log('/' + req.method);
@@ -21,6 +21,7 @@ router.get('/sharks', function(req,res){
 app.use(express.static(path));
 app.use('/', router);
 
+const port = process.env.port || 5000;
 app.listen(port, function () {
   console.log('Example app listening on port 5000!')
 })

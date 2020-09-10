@@ -21,6 +21,11 @@ Github --> AWS CodePipeline --> AWS Elastic BeanStalk
  "start" : "node src/app.js",
  ```
 
+## things to check at AWS CodePipeline
+A IAM Role Service was created by Pipeline:
+AWSCodePipelineServiceRole-us-west-2-sharks-nodejs
+
+## things to check at AWS BeanStalk
 - Add AWS Elastic BeanStalk check the logs where the EBS is runnign the app ( exmaple 8080) , and add this to COnfiguration --> software , Environment as:
     port  8080
 
@@ -32,4 +37,3 @@ Github --> AWS CodePipeline --> AWS Elastic BeanStalk
 - Additional things to do for exmaple
  * add test with supertest and mocha for example
 
- 

@@ -1,7 +1,12 @@
 # nodejs-to-awsbeanstalk
  NodeJs app to deploy to AWS beanstalk
 
- #app details
+
+## Pipeline
+
+Github --> AWS CodePipeline --> AWS Elastic BeanStalk 
+
+## App details
  NodeJs app running on port 5000
 
  # Notes:

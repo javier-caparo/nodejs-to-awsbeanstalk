@@ -1,15 +1,23 @@
-version: 2.17
+version: 2.1
+
+# Define the jobs we want to run for this project
 jobs:
   build:
-    working_directory: ~/repo
     docker:
-      — image: circleci/node
+      - image: circleci/<language>:<version TAG>
     steps:
       - checkout
-      - run:
-          name: install-npm
-          command: npm install
-      - save_cache:
-          key: dependency-cache-{{checksum "package-lock.json"}}
-          paths:
-            - ./node_modules
+      - run: echo "this is the build job"
+  test:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: echo "this is the test job"
+
+# Orchestrate our job run sequence
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      - test

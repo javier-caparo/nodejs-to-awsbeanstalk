@@ -4,6 +4,7 @@
   "description": "NodeJs app to deploy to AWS beanstalk",
   "main": "app.js",
   "scripts": {
+    "start" : "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

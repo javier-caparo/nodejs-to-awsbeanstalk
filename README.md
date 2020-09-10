@@ -25,3 +25,11 @@ Github --> AWS CodePipeline --> AWS Elastic BeanStalk
     port  8080
 
     Apply the changes.
+
+- Adding CircleCI Integration
+ * config.yml file created 
+
+- Additional things to do for exmaple
+ * add test with supertest and mocha for example
+
+ 

@@ -5,8 +5,8 @@ jobs:
       — image: circleci/node:12-stretch-browsers-legacy
     working_directory: ~/sharks-repo
     steps:
-      — checkout
-      - run: 
+      - checkout
+      - run:
           name: install-npm
           command: npm install
       - save_cache:

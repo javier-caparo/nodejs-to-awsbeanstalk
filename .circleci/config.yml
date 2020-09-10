@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/repo
     docker:
       — image: circleci/node:12-stretch-browsers-legacy
-    working_directory: ~/sharks-repo
     steps:
       - checkout
       - run:

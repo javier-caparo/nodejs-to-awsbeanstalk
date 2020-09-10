@@ -1,6 +1,8 @@
 # nodejs-to-awsbeanstalk
  NodeJs app to deploy to AWS beanstalk
 
+# CircleCI Integration:
+[![CircleCI](https://circleci.com/gh/jfcb853/nodejs-to-awsbeanstalk.svg?style=svg)](https://app.circleci.com/pipelines/github/jfcb853/nodejs-to-awsbeanstalk)
 
 ## Pipeline
 

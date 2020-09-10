@@ -10,7 +10,7 @@ jobs:
             - run: npm install
     test:
         docker:
-            - image: circleci/<language>:<version TAG>
+            - image: circleci/node
         steps:
             - checkout
             - run: echo "this is the test job"

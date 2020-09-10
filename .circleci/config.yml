@@ -3,7 +3,13 @@ jobs:
   build:
     docker:
       — image: circleci/node:12-stretch-browsers-legacy
-    working_directory: ~/repo
+    working_directory: ~/sharks-repo
     steps:
       — checkout
-      - run: npm install
+      - run: 
+          name: install-npm
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{checksum "package-lock.json"}}
+          paths:
+            - ./node_modules
